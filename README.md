@@ -8,6 +8,8 @@
 
 # Paperless-ng
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
 [Paperless (click me)](https://github.com/the-paperless-project/paperless) is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents.
 
 Paperless-ng is a fork of the original project, adding a new interface and many other changes under the hood. These key points should help you decide whether Paperless-ng is something you would prefer over Paperless:
