@@ -1,0 +1,16 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+- port: 5432 # PostgreSQL
+  onOpen: ignore
+- port: 8000 # paperless-ng
+  onOpen: open-browser
+
+tasks:
+  - init: |
+      sudo chmod +x install-paperless-ng.sh
+      ./install-paperless-ng.sh
+    command: |
+      echo "running on port 8000..."
+  - command: gp await-port 8000 && sleep 2 && gp preview "$(gp url 8000)"
